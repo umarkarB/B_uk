@@ -68,6 +68,7 @@ public class Utility
 		   return value;
 		    
 	}
+	   
 	   public static void implicitWait(int time,WebDriver driver)
 	   {
 		  
@@ -77,9 +78,11 @@ public class Utility
 	   }
 	   
 	   
+	 
 	   public static void takeScreenshot(WebDriver driver,String myFile) throws IOException
 	   {
 		     String sr= RandomString.make(2);
+		    
 		     File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	
 			 File dest=new File("E:\\New folder\\newscreen\\ScreenShot\\"+  myFile+sr+ ".png");
@@ -95,6 +98,7 @@ public class Utility
 	   {
 		   
 		   JavascriptExecutor js = (JavascriptExecutor)driver;
+		   
 		   js.executeScript("arguments[0].scrollIntoView(true)", element);
 		   
 		   Reporter.log("Scrooling into view --> "+element.getText(), true);
