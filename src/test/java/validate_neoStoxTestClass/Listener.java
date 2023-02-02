@@ -39,7 +39,8 @@ import neoStoxPOMClass.Utility;
    			Utility.takeScreenshot(driver, result.getName());
    		} 
    		   
-   		  catch (IOException e)
+   		  
+    	   catch (IOException e)
    	    {
     			
    			  e.printStackTrace();
