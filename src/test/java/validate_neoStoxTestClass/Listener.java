@@ -20,7 +20,8 @@ import neoStoxPOMClass.Utility;
 		   
 		   try 
 		{
-			Utility.takeScreenshot(driver, result.getName());
+			
+			   Utility.takeScreenshot(driver, result.getName());
 		} 
 		   
 		  catch (IOException e)
@@ -48,6 +49,6 @@ import neoStoxPOMClass.Utility;
     	   
     	   
      }
-	   
+	  // 1st commont add space in try block 
 	   
 }
