@@ -31,7 +31,8 @@ public class Utility
 	// read data from property File
 	   
 	
-	   public static String readDataFromPropertyFile(String key ) throws IOException
+	   
+	public static String readDataFromPropertyFile(String key ) throws IOException
 	   {
 	   //1. creating an object of Properties file
 	
@@ -39,11 +40,13 @@ public class Utility
 	   
 	   // 2. create obje of fileinputstrem
 	   
-			FileInputStream myFile= new FileInputStream("C:\\Users\\bhagw\\eclipse-workspace\\Stocks\\myProperty.properties");
+		
+	        FileInputStream myFile= new FileInputStream("C:\\Users\\bhagw\\eclipse-workspace\\Stocks\\myProperty.properties");
 			
 	  // 3. load file
 			
-			prop.load(myFile);
+			
+	        prop.load(myFile);
 	   
 	  // 4. read data from file
 			
